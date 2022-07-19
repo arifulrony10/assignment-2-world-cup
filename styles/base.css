@@ -1,0 +1,70 @@
+/*
+ * This file contains all the defaults styles and utility classes
+*/
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* Reset defaults */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Setting up defaults */
+body {
+    --color-dark-500: #16161A;
+    --color-dark-300: #242629;
+    --color-dark-200: #3e3f41;
+    --color-dark-100: #94A1B2;
+    --color-purple: #7F5AF0;
+    --color-purple-light: #a386fc;
+    --color-white: #FFFFFE;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-dark-500);
+    width: 80%;
+    margin: 0 auto;
+}
+p {
+    color: var(--color-white);
+}
+/* Utility Classes */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    cursor: pointer;
+    font: inherit;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-white);
+    background-color: var(--color-purple);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+}
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: var(--color-purple-light);
+    transition: all 0.3s ease-out;
+}
+.btn-secondary {
+    display: inline-block;
+    cursor: pointer;
+    font: inherit;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-dark-100);
+    background-color: var(--color-dark-500);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+}
+.btn-secondary:hover,
+.btn-secondary:active {
+    background-color: var(--color-dark-300);
+    transition: all 0.3s ease-out;
+}

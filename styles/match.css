@@ -1,0 +1,29 @@
+/*
+ * This file contains styles of upcomingMatch page
+*/
+/* Card */
+.card {
+    padding: 2rem 1rem;
+}
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.card-img img {
+    width: 35%;
+}
+.card-img p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+}
+.card-title {
+    text-align: center;
+    margin-top: 0;
+}
+.card-info p{
+    text-align: center;
+}
