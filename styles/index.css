@@ -167,10 +167,9 @@ footer hr {
 }
 
 
-
-
 /* Tab Media Queries */
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    /* Hero Section */
     .hero {
         padding: 1.5rem 1.5rem 0 1.5rem;
     }
@@ -197,9 +196,110 @@ footer hr {
         padding: 0.5rem;
         margin-bottom: 1.5rem;
     }
+    /* Aside Bar */
+    aside {
+        float: none;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        margin: 0rem 0rem 1.2rem 0rem;
+        padding: 0px;
+    }
+    .aside-bar {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.5rem;
+        border-radius: 10px;
+        padding: 0.5rem;
+        background-color: var(--color-dark-200);
+    }
+    .aside-bar a {
+        padding: 0.5rem;
+        margin: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .view-all {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* Main Section */
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* Footer Meni */
+    .footer-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.2rem;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-menu a {
+        font-size: 0.8rem;
+    }
 }
 
 /* Mobile Media Queries */
 @media screen and (max-width: 576px) {
-
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        border-radius: 9px;
+        padding: 1rem 1rem 0rem 1rem;
+    }
+    .hero-content {
+        flex-direction: column;
+        width: 100%;
+    }
+    .hero-content h1 {
+        font-size: 1.3rem;
+        padding: 0rem;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+    .hero-content p {
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 0.5rem 0rem;
+    }
+    .hero-content a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        margin: 5px auto;
+        font-size: 0.8rem;
+    }
+    .hero-img {
+        height: 100%;
+    }
+    .hero-img img {
+        /* max-height: 100%; */
+        height: 220px;
+    }
+    /* Aside Bar */
+    .aside-bar {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    /* Main Section */
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+    .view-all {
+        display: none;
+    }
+    /* Footer */
+    .footer-menu {
+        grid-template-columns: 1fr;
+    }
 }
