@@ -3,12 +3,14 @@
 */
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 /* Reset defaults */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 /* Setting up defaults */
 body {
     --color-dark-500: #16161A;
@@ -23,9 +25,11 @@ body {
     width: 80%;
     margin: 0 auto;
 }
+
 p {
     color: var(--color-white);
 }
+
 /* Utility Classes */
 .container {
     max-width: 100%;
@@ -46,11 +50,13 @@ p {
     border-radius: 5px;
     transition: all 0.3s ease-in;
 }
+
 .btn-primary:hover,
 .btn-primary:active {
     background-color: var(--color-purple-light);
     transition: all 0.3s ease-out;
 }
+
 .btn-secondary {
     display: inline-block;
     cursor: pointer;
@@ -63,6 +69,7 @@ p {
     border-radius: 5px;
     transition: all 0.3s ease-in;
 }
+
 .btn-secondary:hover,
 .btn-secondary:active {
     background-color: var(--color-dark-300);
